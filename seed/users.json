@@ -1,0 +1,19 @@
+[
+  {
+    "model": "users.user",
+    "pk": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$nF0lzjSSzGN7adoNJshKuK$t2cfc10MwcH8ftX/jp0c/4liv/Eeh8rJD9XP3dp13jQ=",
+      "last_login": null,
+      "is_superuser": true,
+      "email": "adrian@gmail.com",
+      "first_name": "adrian",
+      "last_name": "jimenez",
+      "is_active": true,
+      "is_staff": true,
+      "date_joined": "2023-05-11T20:17:21.962Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

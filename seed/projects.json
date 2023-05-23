@@ -1,0 +1,26 @@
+[
+  {
+    "model": "projects.project",
+    "pk": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+    "fields": {
+      "created": "2023-05-12T14:25:51.951Z",
+      "modified": "2023-05-12T14:25:51.951Z",
+      "created_user": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "name": "control de salud",
+      "date_start": "2023-05-12",
+      "date_end": "2023-12-01"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": "f1c081ca-70af-4e91-b14d-c5b419af53db",
+    "fields": {
+      "created": "2023-05-12T13:46:13.879Z",
+      "modified": "2023-05-12T13:46:13.879Z",
+      "created_user": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "name": "academia",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-25"
+    }
+  }
+]
