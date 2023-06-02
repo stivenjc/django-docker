@@ -6,15 +6,17 @@ WORKDIR /app
 
 
 RUN apk update \
-    && apk add --mo-cache gcc musl-dev postgresql-dev python3-dev libffi-dev  \
-    && pip install --upgrade pip \
+    && apk add --no-cache gcc musl-dev postgresql-dev python3-dev libffi-dev  \
+    && pip install --upgrade pip
+
+COPY requirements.txt /
 
 COPY ./requirements.txt ./
 
 RUN pip install -r requirements.txt
 
 
-COPY ./ ./
+COPY . /app
 
 EXPOSE 8000
 
