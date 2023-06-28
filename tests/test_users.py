@@ -34,7 +34,7 @@ class UserTestcas(TestSetup):
     def test_get_user(self):
         response = self.client.get('/api/users/', format='json')
 
-        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
 
 
 
