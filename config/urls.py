@@ -6,6 +6,8 @@ from knox.views import LogoutView
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+from django.conf.urls.static import static
+from django.conf import settings
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -27,4 +29,4 @@ urlpatterns = [
     path("api/", include("config.api_router", namespace='api')),
     path("login", LoginView.as_view(), name='login'),
     path("logout", LogoutView.as_view(), name='logout'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
