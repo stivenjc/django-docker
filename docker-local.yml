@@ -1,14 +1,16 @@
 version: '3'
 
 services:
-  db:
-    image: postgres
-    volumes:
-      - ./data/db:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=stivenjc19
-      - POSTGRES_DB=djangodockerpro
+#  postgres:
+#    image: postgres
+#    volumes:
+#      - ./database:/var/lib/postgresql/data
+#    ports:
+#      - 5432:5432
+#    environment:
+#      - POSTGRES_USER=postgres
+#      - POSTGRES_PASSWORD=stivenjc19
+#      - POSTGRES_DB=djangodockerpro
 
   web:
     build: .
@@ -17,5 +19,5 @@ services:
       - .:/app
     ports:
       - '8000:8000'
-    depends_on:
-      - db
+#    depends_on:
+#      - postgres
