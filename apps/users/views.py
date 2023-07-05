@@ -23,7 +23,7 @@ class LoginView(KnoxLoginView):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.validated_data['user']
-        login(request, user)
+        login(request, use)
 
         AuthToken.objects.filter(user=user).delete()
 
