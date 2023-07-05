@@ -1,12 +1,12 @@
 from .base import *
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
 SECRET_KEY = config('secret_key')
 
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-
-import os
 
 LOGGING = {
     "version": 1,
@@ -21,6 +21,16 @@ LOGGING = {
         "level": "WARNING",
     },
 }
+
+sentry_sdk.init(
+    dsn="https://054c4436ebfb4c93baf27c094ea43201@o4504820908818432.ingest.sentry.io/4505477586026496",
+    integrations=[
+        DjangoIntegration(),
+    ],
+    traces_sample_rate=1.0,
+
+    send_default_pii=True
+)
 
 DATABASES = {
     'default': {
