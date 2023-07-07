@@ -9,7 +9,7 @@ class UserModelViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        queryset = Project.objects.all()
+        queryset = Project.objects.select_related('created_user')
         name = self.request.query_params.get('name', None)
         if name:
             queryset = queryset.filter(name__icontains=name)

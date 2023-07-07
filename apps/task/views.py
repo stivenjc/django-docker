@@ -9,4 +9,4 @@ from django.core.cache import cache
 class TaskModelViewSet(ModelViewSet):
     serializer_class = TaskSerializers
     permission_classes = [IsAuthenticated]
-    queryset = Task.objects.all()
+    queryset = Task.objects.select_related('task_creator','assigned','project')
