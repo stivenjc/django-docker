@@ -6,9 +6,19 @@ services:
     build:
       context: .
       dockerfile: ./compose/local/Dockerfile
-    command: python manage.py runserver 0.0.0.0:8000
+    command: python manage.py runserver 0.0.0.0:8001
     container_name: django
     volumes:
       - .:/app
     ports:
-      - '8000:8000'
+      - '8001:8001'
+
+  redis:
+    image: redis:6.0
+    container_name: redis_docker
+    ports:
+      - '6379:6379'
+
+
+volumes:
+  database:
