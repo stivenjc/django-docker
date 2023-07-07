@@ -19,7 +19,7 @@ class TaskModelViewSet(ModelViewSet):
             queryset = cached_data
             cache.clear()
         else:
-            print('todavia no esta guraddo ya se gaurdara')
+            print('no, todavia no esta guraddo ya se gaurdara')
             queryset = Task.objects.all()
             cache.set('data', queryset, timeout=3600)
         serializer = self.get_serializer(queryset, many=True)

@@ -1,0 +1,452 @@
+[
+  {
+    "model": "task.task",
+    "pk": "11acf668-56a9-455e-8243-ebbb2b5c79d6",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 25",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "1adbace5-5e87-45da-b357-5ac18a70f80f",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 16",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "26d03414-10c2-41ee-b86c-958b656b17a3",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 30",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "340624f6-620c-4383-ba48-58b4dba830b3",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 12",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "3d522662-1d3f-44ba-8ee3-cc69c2151383",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 18",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "52f56e2f-cc96-431a-9c71-4ca5634adab8",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 21",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "580a4207-482a-4b86-9c5a-7cfce7d84115",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 23",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "59c2e4c9-658a-4ac7-bdbd-f5a5e47b3a6b",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 13",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "5bec471a-018c-433e-a070-cced4a47b8af",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "5f68f280-1b73-4f42-8e0e-ab59d49c4f93",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 8",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "5fed9ad0-4784-4a1f-b51d-f528fa844d65",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 29",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "624ac921-1a34-42e9-8807-d4114ba8100c",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 2",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "637bcd9f-6ad7-4e4c-b083-5073674de873",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 7 ",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "6dc8a4a4-76af-43c1-ac3c-23a7464b9d1f",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 19",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "707dd468-df40-4876-810b-adeae27a6fce",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 10",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "84195b83-4a64-4bc2-aaf7-8eaf92ba4677",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 5",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "88645d0f-1280-4256-bb9c-d4f738848074",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 9",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "88b5d695-138d-4416-b5c3-777195af5ff7",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 15",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "97667528-4ba5-4df3-8e05-380649e9feb1",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 6",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "a492646f-d38d-4d5d-9758-7e8315358410",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 28",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "ac10e6ef-06e8-48a3-959b-7135e466bfa9",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 26",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "b20c1fb0-a082-44b1-b6f4-82166903a221",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 11",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "bccc6446-acf0-4c03-8e83-74e6f43040ed",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 22",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "be272fb1-39cd-4471-b2a4-49b66c8c5448",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 4",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "c997f837-2fc8-49c2-9add-10aebc307c8e",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 27",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "d7d76903-0dca-4d74-af7c-0634b1d1629d",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 24",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "e768ba1d-2753-4201-9870-6eccdcb27359",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 17",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "e8e1d896-ffe0-4c11-a20a-70ba9b176fab",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 14",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "f865fe6d-4556-4066-b951-4dce8097a384",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 20",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": "fb9e4f93-e08c-4200-84f5-1c8345d79d59",
+    "fields": {
+      "created": "2023-05-12T14:48:31.533Z",
+      "modified": "2023-05-12T14:48:31.533Z",
+      "task_creator": "9bf0a7ce-676a-4c79-8649-769b3044ab12",
+      "assigned": "b3053422-2151-4822-9792-622cda35fe56",
+      "project": "4a897ddc-7a9c-4e4a-b9bb-d523bc3ce3b8",
+      "name": "crear login 3",
+      "description": "Página de inicio de sesión: Debe existir una página de inicio de sesión donde los usuarios puedan ingresar sus credenciales para autenticarse. La página debe contener campos para el nombre de usuario (o dirección de correo electrónico) y la contraseña.",
+      "date_start": "2023-05-12",
+      "date_end": "2023-05-31"
+    }
+  }
+]
