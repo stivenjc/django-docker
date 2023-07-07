@@ -90,9 +90,10 @@ REST_FRAMEWORK = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': config('URL_REDIS'),  # Utiliza el nombre del servicio definido en el docker-compose.yml
+        'LOCATION': config('URL_REDIS'),
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+            "IGNORE_EXCEPTIONS": True,
         }
     }
 }
