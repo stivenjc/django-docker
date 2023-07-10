@@ -16,6 +16,6 @@ class UserModelViewSet(ModelViewSet):
         queryset = Project.objects.select_related('created_user').prefetch_related('task')
         name = self.request.query_params.get('name', None)
         if name:
-            queryset = queryset.filter(created_user__email__icontains=name).select_related('created_user')
+            queryset = queryset.filter(created_user__email__icontains=name).select_related('created_user').prefetch_related('task')
 
         return queryset
