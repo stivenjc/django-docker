@@ -8,4 +8,4 @@ class TaskSerializers(ModelSerializer):
     data_assigned = UserSerializer(source='assigned', read_only=True)
     class Meta:
         model = Task
-        fields = ['task_creator', 'data_task_creator', 'assigned', 'data_assigned', 'project','name','description','date_start','date_end','created', 'modified']
+        fields = ['id', 'task_creator', 'data_task_creator', 'assigned', 'data_assigned', 'project','name','description','date_start','date_end','created', 'modified']
