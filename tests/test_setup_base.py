@@ -79,9 +79,59 @@ class TestSetup(APITestCase):
 
         self.url_task = reverse('api:task:task-list')
 
-        self.task = Task.objects.create(
+        self.task_1 = Task.objects.create(
             task_creator=self.user,
             assigned=self.user_2,
+            project=self.project_2,
+            name=fake.catch_phrase(),
+            description=fake.text(),
+            date_start='2023-06-1',
+            date_end='2023-12-31'
+        )
+
+        self.task = Task.objects.create(
+            task_creator=self.user_2,
+            assigned=self.user,
+            project=self.project_2,
+            name=fake.catch_phrase(),
+            description=fake.text(),
+            date_start='2023-06-1',
+            date_end='2023-12-31'
+        )
+
+        self.task_2 = Task.objects.create(
+            task_creator=self.user_2,
+            assigned=self.user,
+            project=self.project_2,
+            name=fake.catch_phrase(),
+            description=fake.text(),
+            date_start='2023-06-1',
+            date_end='2023-12-31'
+        )
+
+        self.task_3 = Task.objects.create(
+            task_creator=self.user_2,
+            assigned=self.user,
+            project=self.project_2,
+            name=fake.catch_phrase(),
+            description=fake.text(),
+            date_start='2023-06-1',
+            date_end='2023-12-31'
+        )
+
+        self.task_4 = Task.objects.create(
+            task_creator=self.user_2,
+            assigned=self.user,
+            project=self.project_2,
+            name=fake.catch_phrase(),
+            description=fake.text(),
+            date_start='2023-06-1',
+            date_end='2023-12-31'
+        )
+
+        self.task_6 = Task.objects.create(
+            task_creator=self.user_2,
+            assigned=self.user,
             project=self.project_2,
             name=fake.catch_phrase(),
             description=fake.text(),
