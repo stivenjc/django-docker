@@ -11,6 +11,12 @@ class TaskSerializers(ModelSerializer):
         model = Task
         fields = ['id', 'task_creator', 'data_task_creator', 'assigned', 'data_assigned', 'project','name','description','date_start','date_end','created', 'modified']
 
+
+class TaskCreateSerializers(ModelSerializer):
+    class Meta:
+        model = Task
+        fields = ['id', 'task_creator', 'project','name','description','date_start','date_end',]
+
     def validate_project(self, proyecto):
         if proyecto:
             num_tareas = Task.objects.filter(project=proyecto).count()
