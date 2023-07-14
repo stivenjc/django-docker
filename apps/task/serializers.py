@@ -1,6 +1,7 @@
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
 from apps.task.models import Task
+from apps.users.models import User
 from apps.users.UserSerializers import UserSerializer
 
 
@@ -15,7 +16,7 @@ class TaskSerializers(ModelSerializer):
 class TaskCreateSerializers(ModelSerializer):
     class Meta:
         model = Task
-        fields = ['id', 'task_creator', 'project','name','description','date_start','date_end',]
+        fields = ['id', 'task_creator', 'assigned', 'project','name','description','date_start','date_end',]
 
     def validate_project(self, proyecto):
         if proyecto:
