@@ -44,11 +44,10 @@ class TaskModelViewSet(ModelViewSet):
         request.data['task_creator'] = request.user.id
         return super().create(request, *args, **kwargs)
 
-    def update(self, request, *args, **kwargs):
-        partial = True if request.method == 'PATCH' else False
+    def partial_update(self, request, *args, **kwargs):
         instance = self.get_object()
         request.data['task_creator'] = request.user.id
-        serializer = self.get_serializer(instance=instance, data=request.data, partial=partial)
+        serializer = self.get_serializer(instance=instance, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data)
