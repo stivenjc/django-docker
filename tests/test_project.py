@@ -29,6 +29,7 @@ class ProjectTestcas(TestSetup):
         }
 
         respo = self.client.patch(f'{self.url_project}{self.project.id}/', data, format='json')
+        self.assertEqual(respo.status_code, status.HTTP_200_OK)
         self.assertNotEqual(self.project.date_start, data['date_start'])
         self.assertEqual(respo.data['name'], data['name'])
         self.assertEqual(respo.data['data_created_user']['email'], self.user.email)

@@ -6,6 +6,7 @@ from apps.projects.models import Project
 from apps.users.models import User
 from apps.task.models import Task
 from tests.factories import UserFactory, UseSuperFactory
+from django.contrib.auth.models import Group
 
 fake = Faker()
 
@@ -20,6 +21,8 @@ class TestSetup(APITestCase):
 
         # --------------------------user----------------------------#
 
+        intermedio = Group.objects.create(name='Intermedio')
+
         self.login_url = reverse('login')
         self.user = User.objects.create_superuser(
             first_name=fake.first_name(),
@@ -33,6 +36,8 @@ class TestSetup(APITestCase):
             last_name=fake.last_name(),
             password='adrian',
         )
+        self.user.groups.add(intermedio)
+        self.user_2.groups.add(intermedio)
 
         response = self.client.post(self.login_url,
                                     {'email': 'jimenezC@gmail.com', 'password': 'adrian'},
