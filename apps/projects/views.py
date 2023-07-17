@@ -6,15 +6,12 @@ from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.shortcuts import get_object_or_404
 from apps.projects.models import Project
 from apps.projects.serializers import ProjectSerializer
+from .Permissions import RoleBasic, CustomPermission
 
-
-class CustomPermission(BasePermission):
-    def has_permission(self, request, view):
-        return request.user.has_perm('projects.permision_normal')
 
 class UserModelViewSet(ModelViewSet):
     serializer_class = ProjectSerializer
-    permission_classes = [IsAuthenticated, CustomPermission]
+    permission_classes = [IsAuthenticated, CustomPermission, RoleBasic]
 
     def get_queryset(self):
         """
