@@ -59,6 +59,9 @@ class TaskModelViewSet(ModelViewSet):
         """
         instance = self.get_object()
         user = self.request.user
+        if instance.is_active:
+            return Response({"detail": "Not found."}, status.HTTP_404_NOT_FOUND)
+        instance.is_active = False
         if user != instance.task_creator:
             return Response({'detail': 'No tienes permiso para eliminar este proyecto.'}, status=status.HTTP_403_FORBIDDEN)
-        return super().destroy(request, *args, **kwargs)
+        return Response(status=status.HTTP_204_NO_CONTENT)

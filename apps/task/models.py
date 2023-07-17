@@ -1,5 +1,5 @@
 from config.utils.models import BaseModel
-from django.db.models import CharField, ForeignKey, PROTECT, DateField, TextField
+from django.db.models import CharField, ForeignKey, PROTECT, DateField, TextField, BooleanField
 from apps.users.models import User
 from apps.projects.models import Project
 
@@ -9,6 +9,7 @@ class Task(BaseModel):
     project = ForeignKey(Project, on_delete=PROTECT, related_name="task")
     name = CharField(max_length=50, unique=True)
     description = TextField(max_length=300)
+    is_active = BooleanField(default=True)
     date_start = DateField()
     date_end = DateField()
 
