@@ -25,7 +25,7 @@ class TaskModelViewSet(ModelViewSet):
 
     permission_classes = [IsAuthenticated]
     pagination_class = CustomPagination
-    queryset = Task.objects.select_related('task_creator', 'assigned', 'project')
+    queryset = Task.objects.select_related('task_creator', 'assigned', 'project').order_by('created')
 
     def create(self, request, *args, **kwargs):
         # data = request.data
@@ -59,7 +59,7 @@ class TaskModelViewSet(ModelViewSet):
         """
         instance = self.get_object()
         user = self.request.user
-        if instance.is_active:
+        if not instance.is_active:
             return Response({"detail": "Not found."}, status.HTTP_404_NOT_FOUND)
         instance.is_active = False
         if user != instance.task_creator:
