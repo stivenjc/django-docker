@@ -1,0 +1,22 @@
+[
+  {
+    "model": "biblioteca.authors",
+    "pk": "6858d2a2-dda0-4f8e-888a-79441e0b5ea8",
+    "fields": {
+      "created": "2023-07-18T15:41:36.123Z",
+      "modified": "2023-07-18T15:41:36.123Z",
+      "name": "adrian",
+      "fecha_nacimiento": "2002-07-03"
+    }
+  },
+  {
+    "model": "biblioteca.authors",
+    "pk": "c28b9d21-a8e8-4be1-8813-10d3f81fe491",
+    "fields": {
+      "created": "2023-07-18T15:40:58.682Z",
+      "modified": "2023-07-18T15:40:58.682Z",
+      "name": "stiven",
+      "fecha_nacimiento": "2002-07-10"
+    }
+  }
+]

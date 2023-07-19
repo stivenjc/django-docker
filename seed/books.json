@@ -1,0 +1,42 @@
+[
+  {
+    "model": "biblioteca.books",
+    "pk": "631f6eab-2467-4766-8885-204b2cbaa46a",
+    "fields": {
+      "created": "2023-07-18T15:41:51.998Z",
+      "modified": "2023-07-19T14:50:49.348Z",
+      "name": "caperusita roja",
+      "is_free": true,
+      "authors": [
+        "6858d2a2-dda0-4f8e-888a-79441e0b5ea8",
+        "c28b9d21-a8e8-4be1-8813-10d3f81fe491"
+      ]
+    }
+  },
+  {
+    "model": "biblioteca.books",
+    "pk": "81c2a655-3d23-42fd-a4ff-d19c7e00928d",
+    "fields": {
+      "created": "2023-07-19T13:48:12.534Z",
+      "modified": "2023-07-19T15:18:51.195Z",
+      "name": "El lobo",
+      "is_free": false,
+      "authors": [
+        "c28b9d21-a8e8-4be1-8813-10d3f81fe491"
+      ]
+    }
+  },
+  {
+    "model": "biblioteca.books",
+    "pk": "d2c3dbd4-3738-46b0-a188-4494e9a71fb9",
+    "fields": {
+      "created": "2023-07-18T15:42:03.732Z",
+      "modified": "2023-07-19T14:51:11.324Z",
+      "name": "Inventive",
+      "is_free": false,
+      "authors": [
+        "c28b9d21-a8e8-4be1-8813-10d3f81fe491"
+      ]
+    }
+  }
+]

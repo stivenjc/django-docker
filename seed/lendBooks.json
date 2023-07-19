@@ -1,0 +1,32 @@
+[
+  {
+    "model": "biblioteca.lendbooks",
+    "pk": "7b4369c9-b096-4519-b1e8-e556cfd79919",
+    "fields": {
+      "created": "2023-07-19T15:18:51.189Z",
+      "modified": "2023-07-19T15:18:51.189Z",
+      "prestador": "b15d536a-2f7f-4001-b146-fc6650478574",
+      "receptor": "b3053422-2151-4822-9792-622cda35fe56",
+      "fecha_prestamo": "2023-07-19",
+      "fecha_devolucion": "2023-07-28",
+      "books": [
+        "81c2a655-3d23-42fd-a4ff-d19c7e00928d"
+      ]
+    }
+  },
+  {
+    "model": "biblioteca.lendbooks",
+    "pk": "d8b1bab1-b9fc-4774-8546-d35e2576a477",
+    "fields": {
+      "created": "2023-07-19T14:51:11.316Z",
+      "modified": "2023-07-19T14:51:11.316Z",
+      "prestador": "b15d536a-2f7f-4001-b146-fc6650478574",
+      "receptor": "b3053422-2151-4822-9792-622cda35fe56",
+      "fecha_prestamo": "2023-07-19",
+      "fecha_devolucion": "2023-07-28",
+      "books": [
+        "d2c3dbd4-3738-46b0-a188-4494e9a71fb9"
+      ]
+    }
+  }
+]

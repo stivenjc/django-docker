@@ -18,6 +18,7 @@ LOCAL_APPS = [
     'apps.users.apps.UsersConfig',
     'apps.projects.apps.ProjectsConfig',
     'apps.task.apps.TaskConfig',
+    'apps.biblioteca.apps.BibliotecaConfig',
 ]
 
 THIRD_APPS = [
