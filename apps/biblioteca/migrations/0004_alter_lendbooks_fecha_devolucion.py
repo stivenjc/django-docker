@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='lendbooks',
             name='fecha_devolucion',
-            field=models.DateField(default=1),
+            field=models.DateField(default='2023-07-18'),
             preserve_default=False,
         ),
     ]
