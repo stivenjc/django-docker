@@ -30,7 +30,6 @@ def common_user_creation(user_creation):
     """
     creacion de datos de un usuario con datos flaso, creados por una libreria
     """
-    print(user_creation.first_name)
     first_name = fake.first_name()
     return User(
         first_name=first_name,

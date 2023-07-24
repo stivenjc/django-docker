@@ -33,7 +33,6 @@ class LendBooksCreateSerializers(ModelSerializer):
 
     def create(self, validated_data):
         books = validated_data.get('books', [])
-        print(books)
         for id_book in books:
             book = get_object_or_404(Books, id=id_book.id)
             if not book.is_free:
@@ -63,12 +62,9 @@ class LendBooksCreateSerializers(ModelSerializer):
         id_book_to_true = []
         for id in old_ids:
             if id not in ids_book_new:
-                print('hola')
                 id_book_to_true.append(id)
 
         self.save_false_books(id_book_to_true)
-
-        print(id_book_to_true, ids_book_new)
 
         self.mark_books_as_borrowed(new_books_ids)
         instance.books.set(new_books_ids)
