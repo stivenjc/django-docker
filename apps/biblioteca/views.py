@@ -10,7 +10,7 @@ from rest_framework.response import Response
 from datetime import date
 
 class LendBooksViewSet(ModelViewSet):
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
         queryset = LendBooks.objects.all().select_related('prestador', 'receptor')
@@ -58,6 +58,7 @@ class LendBooksViewSet(ModelViewSet):
 
 class BookViewSet(ModelViewSet):
     serializer_class = BooksListSerializers
+    permission_classes = [IsAuthenticated]
 
     def get_serializer_class(self):
         if self.action in "create":
@@ -78,7 +79,6 @@ class BookViewSet(ModelViewSet):
 
         return queryset
 
-    permission_classes = [IsAuthenticated]
 
 class AuthorsViewSet(ModelViewSet):
     serializer_class = AuthorsSerializers
