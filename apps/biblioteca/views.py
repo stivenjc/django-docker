@@ -14,9 +14,15 @@ class LendBooksViewSet(ModelViewSet):
 
     def get_queryset(self):
         queryset = LendBooks.objects.all().select_related('prestador', 'receptor')
-        receptor = self.request.query_params.get('receptor')
+        receptor = self.request.query_params.get('receptor_id')
+        past_delivery = self.request.query_params.get('past_delivery')
         if receptor:
             queryset = queryset.filter(receptor__id=receptor)
+        if past_delivery:
+            if past_delivery != "True":
+                raise ValidationError({'detail':'El parámetro past_delivery debe ser True'})
+            queryset = queryset.filter(fecha_devolucion__lt=date.today())
+
         return queryset
 
     def get_serializer_class(self):
