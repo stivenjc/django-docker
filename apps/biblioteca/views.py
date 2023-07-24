@@ -10,14 +10,14 @@ from rest_framework.response import Response
 from datetime import date
 
 class LendBooksViewSet(ModelViewSet):
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
         queryset = LendBooks.objects.all().select_related('prestador', 'receptor')
-        receptor = self.request.query_params.get('receptor_id')
+        receptor = self.request.query_params.get('receptor')
         past_delivery = self.request.query_params.get('past_delivery')
         if receptor:
-            queryset = queryset.filter(receptor__id=receptor)
+            queryset = queryset.filter(receptor__first_name__icontains=receptor)
         if past_delivery:
             if past_delivery != "True":
                 raise ValidationError({'detail':'El parámetro past_delivery debe ser True'})
