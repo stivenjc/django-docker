@@ -10,7 +10,7 @@ from rest_framework.response import Response
 from datetime import date
 
 class LendBooksViewSet(ModelViewSet):
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
         queryset = LendBooks.objects.all().select_related('prestador', 'receptor')
