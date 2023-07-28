@@ -35,7 +35,7 @@ class Product(BaseModel):
         db_table = 'products'
 
     def __str__(self):
-        return f'{self.name}---${self.price}----{self.number_of_units}'
+        return f'{self.name}---${self.price}---{self.number_of_units}'
 
 
 class Comment(BaseModel):
