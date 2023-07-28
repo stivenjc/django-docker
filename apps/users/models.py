@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.db import models
+from config.utils.choices import ROL
 from django.utils import timezone
 from uuid import uuid4
 
@@ -25,6 +26,12 @@ class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True)
     first_name = models.CharField(max_length=150)
     last_name = models.CharField(max_length=150)
+    role = models.CharField(
+        max_length=100,
+        choices=ROL,
+        default=ROL[0][0],
+        verbose_name="rol",
+    )
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     photo = models.ImageField(upload_to='photo_perfil', null=True)

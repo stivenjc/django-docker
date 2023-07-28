@@ -19,6 +19,7 @@ LOCAL_APPS = [
     'apps.projects.apps.ProjectsConfig',
     'apps.task.apps.TaskConfig',
     'apps.biblioteca.apps.BibliotecaConfig',
+    'apps.ecommerce.apps.EcommerceConfig',
 ]
 
 THIRD_APPS = [

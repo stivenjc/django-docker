@@ -12,4 +12,5 @@ urlpatterns = [
     path("projects/", include("apps.projects.urls", namespace="projects")),
     path("task/", include("apps.task.urls", namespace="task")),
     path("library/", include("apps.biblioteca.urls", namespace="library")),
+    path("ecommerce/", include("apps.ecommerce.urls", namespace="ecommerce")),
 ]
