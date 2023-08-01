@@ -3,6 +3,8 @@ from rest_framework import status
 from rest_framework.test import APITestCase
 from django.urls import reverse
 from apps.projects.models import Project
+from apps.ecommerce.models import Category
+from config.utils.choices import ROL
 from apps.users.models import User
 from apps.task.models import Task
 from tests.factories import UserFactory, UseSuperFactory
@@ -51,8 +53,7 @@ class TestSetup(APITestCase):
 
         self.token = response.data['token']
 
-
-        #de esta manera todas vista tendran acceso al toque
+        # de esta manera todas vista tendran acceso al toque
         self.client.credentials(HTTP_AUTHORIZATION=f'token {self.token}')
 
         self.Token = {'Authorization': f'Token {self.token}'}
@@ -63,7 +64,7 @@ class TestSetup(APITestCase):
 
         # ------------------------------------proejct---------------------------------------#
 
-        #self.url_project = '/api/projects/'
+        # self.url_project = '/api/projects/'
         self.url_project = reverse('api:projects:project-list')
 
         self.project = Project.objects.create(
@@ -80,7 +81,7 @@ class TestSetup(APITestCase):
             date_end='2023-12-23',
         )
 
-        #---------------------------------------task------------------------------------------#
+        # ---------------------------------------task------------------------------------------#
 
         self.url_task = reverse('api:task:task-list')
 
@@ -143,5 +144,24 @@ class TestSetup(APITestCase):
             date_start='2023-06-1',
             date_end='2023-12-31'
         )
+
+        self.vendedor = User.objects.create_user(
+            first_name=fake.first_name(),
+            email='vendedor@gmail.com',
+            last_name=fake.last_name(),
+            password='adrian',
+            role=ROL[1][0]
+        )
+
+        self.persona_comun = User.objects.create_user(
+            first_name=fake.first_name(),
+            email='comun@gmail.com',
+            last_name=fake.last_name(),
+            password='adrian',
+        )
+
+        self.categoria = Category.objects.create(name='electrodomesticos')
+
+        self.url_ecommerce = reverse('api:ecommerce:product-list')
 
         return super().setUp()

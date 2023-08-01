@@ -22,7 +22,7 @@ class Photo(models.Model):
 
 class Product(BaseModel):
     name = CharField(max_length=50)
-    photos = ManyToManyField(Photo)
+    photos = ManyToManyField(Photo, blank=True)
     price = DecimalField(max_digits=10, decimal_places=2)
     is_active = BooleanField(default=True)
     category = ForeignKey(Category, on_delete=PROTECT)
