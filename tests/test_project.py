@@ -8,16 +8,16 @@ from tests.test_setup_base import TestSetup
 class ProjectTestcas(TestSetup):
 
     def test_get_all_project(self):
-        response = self.client.get(self.url_project, format='json')
+        response = self.client.get(self.url_project, format='json', headers=self.Token)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_get_only_project(self):
-        response = self.client.get(f'{self.url_project}{self.project.id}/', format='json')
+        response = self.client.get(f'{self.url_project}{self.project.id}/', format='json', headers=self.Token)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_get_name_project(self):
         query_params = {'name': 'ini'}
-        response = self.client.get(self.url_project, query_params, format='json')
+        response = self.client.get(self.url_project, query_params, format='json', headers=self.Token)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_update_project(self):
@@ -28,7 +28,7 @@ class ProjectTestcas(TestSetup):
             'date_end': '2023-07-14'
         }
 
-        respo = self.client.patch(f'{self.url_project}{self.project.id}/', data, format='json')
+        respo = self.client.patch(f'{self.url_project}{self.project.id}/', data, format='json', headers=self.Token)
         self.assertEqual(respo.status_code, status.HTTP_200_OK)
         self.assertNotEqual(self.project.date_start, data['date_start'])
         self.assertEqual(respo.data['name'], data['name'])
@@ -37,7 +37,7 @@ class ProjectTestcas(TestSetup):
         self.assertEqual(respo.status_code, status.HTTP_200_OK)
 
     def test_delete_project(self):
-        respo = self.client.delete(f'{self.url_project}{self.project.id}/', format='json')
+        respo = self.client.delete(f'{self.url_project}{self.project.id}/', format='json', headers=self.Token)
 
         with self.assertRaises(Project.DoesNotExist):
             Project.objects.get(id=self.project.id)
@@ -52,7 +52,7 @@ class ProjectTestcas(TestSetup):
             'date_start': '2002-07-14',
             'date_end': '2023-07-14'
         }
-        response = self.client.post(self.url_project, data, format='json')
+        response = self.client.post(self.url_project, data, format='json', headers=self.Token)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
 # import pytest

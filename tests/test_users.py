@@ -32,7 +32,7 @@ class UserTestcas(TestSetup):
         self.assertEqual(self.super_user.is_superuser, True)
 
     def test_get_user(self):
-        response = self.client.get('/api/users/', format='json')
+        response = self.client.get('/api/users/', format='json', headers=self.Token)
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 

@@ -3,7 +3,7 @@ from rest_framework import status
 from rest_framework.test import APITestCase
 from django.urls import reverse
 from apps.projects.models import Project
-from apps.ecommerce.models import Category
+from apps.ecommerce.models import Category, Product
 from config.utils.choices import ROL
 from apps.users.models import User
 from apps.task.models import Task
@@ -54,7 +54,7 @@ class TestSetup(APITestCase):
         self.token = response.data['token']
 
         # de esta manera todas vista tendran acceso al toque
-        self.client.credentials(HTTP_AUTHORIZATION=f'token {self.token}')
+        #self.client.credentials(HTTP_AUTHORIZATION=f'token {self.token}')
 
         self.Token = {'Authorization': f'Token {self.token}'}
 
@@ -145,6 +145,8 @@ class TestSetup(APITestCase):
             date_end='2023-12-31'
         )
 
+        # -------------------ecommerce-----------------------------
+
         self.vendedor = User.objects.create_user(
             first_name=fake.first_name(),
             email='vendedor@gmail.com',
@@ -159,9 +161,26 @@ class TestSetup(APITestCase):
             last_name=fake.last_name(),
             password='adrian',
         )
-
         self.categoria = Category.objects.create(name='electrodomesticos')
 
-        self.url_ecommerce = reverse('api:ecommerce:product-list')
+        self.product = Product.objects.create(
+            name='prueba',
+            price= "1000",
+            category=self.categoria,
+            description= "no sees",
+            number_of_units= 1,
+            created_by= self.vendedor
+        )
 
+        respo = self.client.post(self.login_url,
+                                    {'email': 'vendedor@gmail.com', 'password': 'adrian'},
+                                    format='json')
+
+        self.token_vendedor = respo.data['token']
+
+        self.token_vendedor = {'Authorization': f'Token {self.token_vendedor}'}
+
+
+
+        self.url_ecommerce = reverse('api:ecommerce:product-list')
         return super().setUp()
