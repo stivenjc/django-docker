@@ -30,7 +30,7 @@ class ProductViewSet(ModelViewSet):
         partial = True if request.method == "PATCH" else False
         instance = self.get_object()
         request.data['created_by'] = request.user.id
-        if instance.created_by.id != request.user.id:
+        if instance.created_by.id != request.user.id or instance.created_by.role != ROL[1][0]:
             return Response({'message': 'I sorry, you cannot do actions this product'}, status.HTTP_403_FORBIDDEN)
         serializer = self.get_serializer(instance=instance, data=request.data, partial=partial)
         serializer.is_valid(raise_exception=True)
