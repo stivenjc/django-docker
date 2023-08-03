@@ -1,2 +1,2 @@
 # django-docker
-Es un proejcto de ddjango donde esta con docker completamente
+Es un project de django, que esta implementado con docker, docker-compose
