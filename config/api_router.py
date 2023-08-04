@@ -13,4 +13,5 @@ urlpatterns = [
     path("task/", include("apps.task.urls", namespace="task")),
     path("library/", include("apps.biblioteca.urls", namespace="library")),
     path("ecommerce/", include("apps.ecommerce.urls", namespace="ecommerce")),
+    path("task_controller/", include("apps.task_controller.urls", namespace="controller")),
 ]

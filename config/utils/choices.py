@@ -6,3 +6,9 @@ ROL = (
     ('COMPRADOR','comprador')
 )
 
+
+STATE_TASK = (
+    ("INICIADO", "iniciado"),
+    ("COMPLETADO", "completado"),
+)
+
