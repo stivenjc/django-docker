@@ -20,6 +20,7 @@ class TaskControllerViewSet(ModelViewSet):
         task_completed = self.request.query_params.get('task_completed')
         task_passed_time = self.request.query_params.get('task_passed_time')
         task_name = self.request.query_params.get('task_name')
+        filtered_time_bout_to_end= self.request.query_params.get('filtered_time_bout_to_end')
         if task_completed:
             if task_completed != "True":
                 raise ValidationError({'detail': 'El parámetro task_completed debe ser True'})
@@ -32,6 +33,13 @@ class TaskControllerViewSet(ModelViewSet):
                 Q(date_and_time__lt=tiempo_actual) & Q(date_and_time__hour=F('date_and_time__hour')))
         if task_name:
             queryset = queryset.filter(name__icontains=task_name)
+        if filtered_time_bout_to_end:
+            tiempo_actual = timezone.localtime()
+            if filtered_time_bout_to_end != "True":
+                raise ValidationError({'detail': 'El parámetro filtered_time_bout_to_end debe ser True'})
+            queryset = queryset.filter(
+                Q(date_and_time__gte=tiempo_actual) & Q(date_and_time__hour=F('date_and_time__hour'))
+            ).order_by('date_and_time')
 
         return queryset
 
