@@ -13,4 +13,4 @@ class TaskController(BaseModel):
     )
 
     def __str__(self):
-        return f'{self.name}---{self.state_task}'
+        return f'{self.name}---{self.state_task}--{self.is_active}'
