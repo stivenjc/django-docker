@@ -24,7 +24,6 @@ class TaskControllerCreateSerializers(ModelSerializer):
         count_task = TaskController.objects.filter(
                 is_active=True, state_task=STATE_TASK[0][0]
         ).count()
-        print(count_task)
         if count_task >= 20:
             raise serializers.ValidationError(
                 f'Lo siento no puedes tener mas 20 tareas sin terminar,'

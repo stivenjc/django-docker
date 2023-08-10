@@ -6,6 +6,8 @@ from apps.projects.models import Project
 from apps.ecommerce.models import Category, Product
 from config.utils.choices import ROL
 from apps.users.models import User
+from config.utils.choices import STATE_TASK
+from apps.task_controller.models import TaskController
 from apps.task.models import Task
 from tests.factories import UserFactory, UseSuperFactory
 from django.contrib.auth.models import Group
@@ -183,4 +185,155 @@ class TestSetup(APITestCase):
 
 
         self.url_ecommerce = reverse('api:ecommerce:product-list')
+
+        #----------------------------task controller ------------------------------#
+        self.url_task_controller = reverse('api:controller:controller-list')
+
+        self.task_c_1 = TaskController.objects.create(
+            name='preuba1',
+            description='nosse',
+            date_and_time='2023-07-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+
+        self.task_c_2 = TaskController.objects.create(
+            name='preuba2',
+            description='nosse',
+            date_and_time='2023-07-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+
+        self.task_c_3 = TaskController.objects.create(
+            name='preuba3',
+            description='nosse',
+            date_and_time='2023-07-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+
+        self.task_c_4 = TaskController.objects.create(
+            name='preuba4',
+            description='nosse',
+            date_and_time='2023-07-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+
+        self.task_c_5 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-07-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+
+        self.task_c_6 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+
+        self.task_c_7 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_8 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_9 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_10 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_11 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_12 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_13 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_14 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_15 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_16 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_17 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_18 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_19 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+        self.task_c_20 = TaskController.objects.create(
+            name='preuba5',
+            description='nosse',
+            date_and_time='2023-08-14T09:55:00-05:00',
+            is_active=True,
+            state_task=STATE_TASK[0][0]
+        )
+
         return super().setUp()
