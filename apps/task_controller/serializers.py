@@ -40,16 +40,17 @@ class TaskControllerUpdateSerializers(ModelSerializer):
 
     def update(self, instance, validate_data):
         date_task = validate_data.get('date_and_time')
-        all_data_task = TaskController.objects.filter(
-            date_and_time__date=date_task.date(), state_task=STATE_TASK[0][0],
-            is_active=True
-        )
-        id_all_task = [item.id for item in all_data_task]
-        if not instance.id in id_all_task:
-            if all_data_task.count() >= 5:
-                raise serializers.ValidationError(
-                    f'Lo siento este dia ya tiene 5 tareas no puede añadir mas hasta que las completes o elimines'
-                )
+        if date_task:
+            all_data_task = TaskController.objects.filter(
+                date_and_time__date=date_task.date(), state_task=STATE_TASK[0][0],
+                is_active=True
+            )
+            id_all_task = [item.id for item in all_data_task]
+            if not instance.id in id_all_task:
+                if all_data_task.count() >= 5:
+                    raise serializers.ValidationError(
+                        f'Lo siento este dia ya tiene 5 tareas no puede añadir mas hasta que las completes o elimines'
+                    )
         return super().update(instance, validate_data)
 
 
