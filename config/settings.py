@@ -47,6 +47,7 @@ THIRD_APPS = [
     'rest_framework',
     'knox',
     'drf_yasg',
+    'rolepermissions'
 ]
 
 INSTALLED_APPS = BASE_APPS + LOCAL_APPS + THIRD_APPS
@@ -62,6 +63,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'config.urls'
+
+ROLEPERMISSIONS_MODULE = 'config.roles'
 
 TEMPLATES = [
     {

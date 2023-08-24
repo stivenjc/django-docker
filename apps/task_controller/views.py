@@ -10,10 +10,11 @@ from apps.task_controller.models import TaskController
 from apps.task_controller.serializers import TaskControllerCreateSerializers, \
     TaskControllerListRetrieveSerializers, TaskControllerUpdateSerializers
 from config.utils.choices import STATE_TASK
+from apps.projects.Permissions import CanallTaskPermission
 
 
 class TaskControllerViewSet(ModelViewSet):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, CanallTaskPermission]
 
     def get_queryset(self):
         queryset = TaskController.objects.filter(is_active=True).order_by('-created')
