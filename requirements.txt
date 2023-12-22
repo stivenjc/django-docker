@@ -10,6 +10,7 @@ Pillow==10.0.0
 django-cors-headers==4.1.0
 redis==4.6.0
 reportlab==4.0.4
+channels==4.0.0
 
 #----pruebas unitarias----------
 

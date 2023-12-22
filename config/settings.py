@@ -41,9 +41,11 @@ LOCAL_APPS = [
     'apps.users.apps.UsersConfig',
     'apps.projects.apps.ProjectsConfig',
     'apps.task.apps.TaskConfig',
+    'apps.chat.apps.ChatConfig',
 ]
 
 THIRD_APPS = [
+    'channels',
     'rest_framework',
     'knox',
     'drf_yasg',
@@ -80,6 +82,14 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
+ASGI_APPLICATION = 'config.asgi.application'
+
+CHANNEL_LAYER = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChanelLayer"
+    }
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
