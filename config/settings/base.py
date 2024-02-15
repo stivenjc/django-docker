@@ -20,6 +20,7 @@ LOCAL_APPS = [
     'apps.task.apps.TaskConfig',
     'apps.biblioteca.apps.BibliotecaConfig',
     'apps.ecommerce.apps.EcommerceConfig',
+    'apps.task_controller.apps.TaskControllerConfig',
 ]
 
 THIRD_APPS = [
@@ -123,7 +124,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Bogota'
 
 USE_I18N = True
 
